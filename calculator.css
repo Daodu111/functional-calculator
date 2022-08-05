@@ -1,0 +1,244 @@
+:root {
+    --border-color: hsl(268, 71%, 12%);
+    --small-box-color: hsl(268, 75%, 9%);
+    --neutal-w: #ffff;
+    --width: 56%;
+}
+
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: hsl(224, 36%, 15%);
+  }
+  @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap");
+  
+  h2 {
+      text-align: center;
+  }
+
+  main {
+      margin: 0 auto;
+      max-width: 40%;
+      /*border: 2px solid var(--border-color);*/
+      height: 500px;
+  }
+  /*@media(max-width:375px) {
+    body {
+       max-width: 100%; 
+    }
+  }*/
+  @media screen {
+      
+  }
+    @media(max-width:375px) {
+      .small-box {
+          max-width: 100%;
+          width: 375px;
+      }
+    }
+    @media(max-width:375px) {
+        button, .btn {
+            max-width: 80%;
+            height: auto;
+            background-color: blue;
+
+        }
+      }
+
+      button#setting-icon {
+        height: 30px;
+        width: 30px;
+        position: relative;
+        top: 2px;
+        background: var(--border-color);
+        color: #fff;
+        border: 1px solid #fff;
+    }
+    .color-box {
+        width: 31px;
+        margin-left: -55px;
+        transition: all ease 1s;
+        top: 109px;
+        z-index: 99;
+        display: flex;
+    }
+    .color-box .btn-style {
+        opacity: 0;
+    }
+    .color-box.main .btn-style {
+        opacity: 1;
+    }
+    .color-box.main {
+        margin-left: -44px;
+    }
+    /* color scheeme */
+    button#blue-color {
+        background: hsl(268, 75%, 9%);
+        border: 1.5px solid #fff;
+    }
+    button#deep-blue-color {
+        background: hsl(281, 89%, 26%);
+        border: 1px solid #fff;
+    }
+    button#white-color {
+        background: hsl(0, 0, 100%);
+        border: 1px solid #fff;
+    }
+    .btn-style {
+        border: 0;
+        width: 30px;
+        height:30px;
+    }
+
+    #blue-color .output {
+        background-color: hsl(268, 75%, 9%);
+    }
+    #blue-color .big-box {
+       background-color: hsl(268, 75%, 9%);
+    }
+    #blue-color .del {
+        background-color:  hsl(225, 21%, 49%);
+    }
+    #blue-color .reset {
+        background-color:  hsl(225, 21%, 49%);
+    }
+    #blue-color .equal  {
+        background-color: hsl(6, 63%, 50%);
+    }
+
+
+    #deep-blue-color .output {
+        background-color: hsl(268, 75%, 9%);
+        color: hsl(52, 100%, 62%);
+    }
+    #deep-blue-color .big-box {
+       background-color: hsl(268, 75%, 9%);
+       color: hsl(52, 100%, 62%);
+    }
+    #deep-blue-color .del {
+        background-color:  hsl(281, 89%, 26%);
+        color: hsl(0, 0, 100%);
+    }
+    #deep-blue-color .reset {
+        background-color:  hsl(281, 89%, 26%);
+        color: hsl(0, 0, 100%);
+    }
+    #deep-blue-color .equal  {
+        background-color: hsl(176, 100%, 44%);
+        color: hsl(198, 20%, 13%);
+    }
+    
+
+
+
+    #white-color .output {
+        background-color: hsl(45, 7%, 89%);
+        color: hsl(198, 20%, 13%);
+    }
+    #white-color .big-box {
+       background-color: hsl(45, 7%, 89%);
+       color: hsl(198, 20%, 13%);
+    }
+    #white-color .del {
+        background-color:  hsl(185, 58%, 25%);
+        color: hsl(0, 0, 100%);
+    }
+    #white-color .reset {
+        background-color:  hsl(185, 58%, 25%);
+        color: hsl(0, 0, 100%);
+    }
+    #white-color .equal  {
+        background-color: hsl(30, 25%, 89%);
+        color: hsl(0, 0, 100%);
+    }
+    
+
+
+  .small-box {
+      width: var(--width);
+      height: 70px;
+      background-color: var(--small-box-color);
+      color: var(--neutal-w);
+      margin: 0 auto;
+      border-radius: 10px;
+  }
+  .small-box p {
+      padding: 1em 0.2em 1em 8.5em;
+      font-size: 25px;
+  }
+  button {
+      width: 60px;
+      height: 40px;
+      background: var(--neutal-w);
+      border-radius: 8px;
+  }
+  .big-box {
+      width: var(--width);
+      height: 270px;
+      background-color: var(--small-box-color);
+      color: var(--border-color);
+      margin: 25px auto;
+      border-radius: 10px;
+  }
+  .col-1 {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 15px;
+  }
+  .col-2 {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+  }
+  
+  .btn {
+    width: 130px;
+    height: 40px;
+    background: var(--neutal-w);
+    border-radius: 8px;
+  }
+ .del {
+     background-color: hsl(225, 21%, 49%);
+     box-shadow: none;
+     outline: none;
+ }
+ .reset {
+     background-color: hsl(225, 21%, 49%);
+ }
+ .equal {
+     background-color: hsl(6, 63%, 50%);
+ }
+
+
+ .output {
+    /*grid-column: 1 / -1;*/
+    width: 53%;
+    margin: 0 auto;
+    height: 70px;
+    border-radius: 10px;
+    background-color: var(--small-box-color);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+ }
+ .output .previous-operand {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.5rem;
+ }
+ .output .current-operand {
+    color: var(--neutal-w);
+    font-size: 2.5rem;
+ }
+
+
+ .attribution {
+     font-size: 11px; text-align: center; 
+}
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+}

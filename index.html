@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+
+  <h2>Flexbox Calculator</h2>
+  <main>
+    <div class="main-wrapper">
+      <div class="title-wrapper">
+        <div class="color-box main">
+          <button id="blue-color" class="btn-style" ></button>
+          <button id="white-color" class="btn-style" ></button>
+          <button id="deep-blue-color" class="btn-style" ></button>
+          <button id="setting-icon">
+            <i class="fa fa-cog fa-spin"></i>
+          </button>
+        </div>
+
+        <div class="output">
+          <div data-previous-operand class="previous-operand">123 +</div>
+          <div data-current-operand class="current-operand">456</div>
+        </div>
+
+        <div class="big-box">
+            <div class="col-1">
+            <button data-number>7</button>
+            <button data-number>8</button>
+            <button data-number>9</button>
+            <button data-delete class="del">DEL</button>
+            </div>
+            <div class="col-2">
+                <button data-number>4</button>
+                <button data-number>5</button>
+                <button data-number>6</button>
+                <button data-operation>+</button>
+            </div>
+            <div class="col-2">
+                <button data-number>1</button>
+                <button data-number>2</button>
+                <button data-number>3</button>
+                <button data-operation>-</button>
+            </div>
+            <div class="col-2">
+                <button data-number>.</button>
+                <button data-number>0</button>
+                <button data-operation>/</button>
+                <button data-operation>*</button>
+                </div>
+            <div class="col-2">
+            <button data-all-clear class="btn reset">RESET</button>
+            <button data-equals class="btn equal">=</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Aisha Daodu</a>.
+  </div>
+
+
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
